@@ -1,0 +1,31 @@
+
+
+
+/* use variables */
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
+body {
+  margin: 50px;
+}
+/* set container to grid */
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr)
+}
+
+/* fr: ractional-unit, or free-space represents the amount of space left after all the units 
+are laid out. it's a good idea to use this instead of % or px */
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: var(--black);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: var(--yellow); /* best colour */
+}
